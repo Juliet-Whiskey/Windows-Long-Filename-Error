@@ -7,18 +7,18 @@ It can be hard in large batches of files to find the culprit (or culprits), and 
 
 ## User Variables
 You need to update: 
--	Location –
--	Lengh – 
--	Save Location – Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt). 
+-	*Location – *
+-	*Lengh – *
+-	*Save Location – Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt). *
 
 
 ## The Command
 There are two different versions of the script, one to print the results to the terminal, the other to print results to a nominated text file.
 
-- Display results in terminal:
+- *Display results in terminal:*
   - Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName}
 
-- Save results to a text file:
+- *Save results to a text file:*
   - Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName} > “**SAVE LOCATION**”
 
 
