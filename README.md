@@ -7,8 +7,8 @@ It can be hard in large batches of files to find the culprit (or culprits), and 
 
 ## User Variables
 You need to update: 
--	**Location – **
--	**Lengh – **
+-	**Location –**
+-	**Lengh –**
 -	**Save Location –** Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt).
 
 
@@ -24,13 +24,8 @@ There are two different versions of the script, one to print the results to the 
 
 
 ## Example
-- Example 1 – Print to Terminal
+- *Example 1 – Print to Terminal*
   - Get-ChildItem -Path "C:\Users\Bob|Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName}
 
-- Example 1 – Save to file
+- *Example 1 – Save to file*
   - Get-ChildItem -Path "C:\Users\Bob\Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName} > C:\Users\Bob\Documents\Results.txt
-
-
-
-
-A powershell script to find filenames and folders that exceed the Windows limit
