@@ -13,11 +13,11 @@ You need to update:
 
 
 ## Anatomy of the command
-Display results in terminal:
-- Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName}
+- Display results in terminal:
+  - Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName}
 
-Save results to a text file:
-- Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName} > “**SAVE LOCATION**”
+- Save results to a text file:
+ - Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName} > “**SAVE LOCATION**”
 
 
 
