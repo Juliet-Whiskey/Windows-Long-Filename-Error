@@ -31,8 +31,8 @@ There are two different versions of the script, one to print the results to the 
   - Get-ChildItem -Path "C:\Users\Bob\Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName} > C:\Users\Bob\Documents\Results.txt
 
 ## To Do
-- [ ]
-- [ ]
+- Update script to let users set their own variables as part of the script.
+
 
 
 
