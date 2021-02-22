@@ -10,18 +10,22 @@ You need to provide:
 -	Save Location – Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt). 
 
 Display results in terminal:
+
 Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName}
 
-_Save results to a text file:_
+Save results to a text file:
+
 Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName} > “**SAVE LOCATION**”
 
 
 
 
 Example 1 – Print to Terminal
+
 Get-ChildItem -Path "C:\Users\Bob|Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName}
 
 Example 1 – Save to file
+
 Get-ChildItem -Path "C:\Users\Bob\Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName} > C:\Users\Bob\Documents\Results.txt
 
 
