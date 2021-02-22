@@ -32,7 +32,7 @@ There are two different versions of the script, one to print the results to the 
 
 ## To Do
 - Update script to let users set their own variables as part of the script.
-- Complete README.MD document.
+- Complete README.md document.
 
 
 
