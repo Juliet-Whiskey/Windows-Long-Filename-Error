@@ -22,13 +22,11 @@ You need to update:
 
 
 ## Example
-Example 1 – Print to Terminal
+- Example 1 – Print to Terminal
+  - Get-ChildItem -Path "C:\Users\Bob|Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName}
 
-Get-ChildItem -Path "C:\Users\Bob|Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName}
-
-Example 1 – Save to file
-
-Get-ChildItem -Path "C:\Users\Bob\Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName} > C:\Users\Bob\Documents\Results.txt
+- Example 1 – Save to file
+  - Get-ChildItem -Path "C:\Users\Bob\Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName} > C:\Users\Bob\Documents\Results.txt
 
 
 
