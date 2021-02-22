@@ -7,9 +7,9 @@ It can be hard in large batches of files to find the culprit (or culprits), and 
 
 ## User Variables
 You need to update: 
--	*Location – *
--	*Lengh – *
--	*Save Location – Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt). *
+-	**Location – **
+-	**Lengh – **
+-	**Save Location –** Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt).
 
 
 ## The Command
