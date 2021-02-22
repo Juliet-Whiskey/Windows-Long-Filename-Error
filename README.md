@@ -4,12 +4,15 @@ There is a limitation in windows on the lengh of file names that can stop them b
 
 It can be hard in large batches of files to find the culprit (or culprits), and this powershell script is to make the process easier by searching folders recurvisley for the offending file names. You need to update a few variables to run the script.
 
-## Anatomy of the command
+
+## Variables
 You need to update: 
 -	Location –
 -	Lengh – 
 -	Save Location – Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt). 
 
+
+## Anatomy of the command
 Display results in terminal:
 - Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName}
 
