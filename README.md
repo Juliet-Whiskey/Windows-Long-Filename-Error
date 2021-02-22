@@ -9,6 +9,7 @@ You need to provide:
 -	Lengh – 
 -	Save Location – Path to where results should be saved. The specific file must be specified in the string (i.e. results.txt). 
 
+## Anatomy of the command
 Display results in terminal:
 - Get-ChildItem -Path "**LOCATION**" -Recurse -File |Where-Object {$_.FullName.Length -ge **LENGH** } | ForEach-Object{$_.FullName}
 
@@ -17,7 +18,7 @@ Save results to a text file:
 
 
 
-
+## Example
 Example 1 – Print to Terminal
 
 Get-ChildItem -Path "C:\Users\Bob|Downloads\ " -Recurse -File |Where-Object {$_.FullName.Length -ge 260 } | ForEach-Object{$_.FullName}
