@@ -1,4 +1,4 @@
-# Windows Long Filename Error
+# Windows Long Filename Error Identification
 
 There is a limitation in windows on the lengh of file names that can stop them being processed (copied, moved, deleted etc), and results in the error message “The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters”.
 
